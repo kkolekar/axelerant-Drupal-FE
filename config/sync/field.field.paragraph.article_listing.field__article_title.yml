@@ -1,0 +1,21 @@
+uuid: fc7d9149-c05a-4b55-bdef-2ba1586049db
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field__article_title
+    - paragraphs.paragraphs_type.article_listing
+  module:
+    - text
+id: paragraph.article_listing.field__article_title
+field_name: field__article_title
+entity_type: paragraph
+bundle: article_listing
+label: ' article title'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text

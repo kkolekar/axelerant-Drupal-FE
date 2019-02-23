@@ -1,0 +1,112 @@
+uuid: 3f2fe7c8-8828-46af-ab72-33ea142d6df5
+langcode: en
+status: true
+dependencies:
+  module:
+    - social_media_links
+  theme:
+    - company
+id: socialmedialinks
+theme: company
+region: footer
+weight: 0
+provider: null
+plugin: social_media_links_block
+settings:
+  id: social_media_links_block
+  label: 'Social Media Links'
+  provider: social_media_links
+  label_display: '0'
+  platforms:
+    rss:
+      value: ''
+      description: ''
+      weight: '-30'
+    youtube_channel:
+      value: ''
+      description: ''
+      weight: '-29'
+    instagram:
+      value: ''
+      description: ''
+      weight: '-28'
+    vimeo:
+      value: ''
+      description: ''
+      weight: '-27'
+    github:
+      value: ''
+      description: ''
+      weight: '-26'
+    bitbucket:
+      value: ''
+      description: ''
+      weight: '-25'
+    drupal:
+      value: ''
+      description: ''
+      weight: '-24'
+    tumblr:
+      value: ''
+      description: ''
+      weight: '-23'
+    contact:
+      value: ''
+      description: ''
+      weight: '-22'
+    behance:
+      value: ''
+      description: ''
+      weight: '-21'
+    flickr:
+      value: ''
+      description: ''
+      weight: '-20'
+    youtube:
+      value: ''
+      description: ''
+      weight: '-19'
+    pinterest:
+      value: ''
+      description: ''
+      weight: '-18'
+    vkontakte:
+      value: ''
+      description: ''
+      weight: '-17'
+    email:
+      value: test@gmail.com
+      description: ''
+      weight: '-16'
+    twitter:
+      value: 'https://www.twitter.com/'
+      description: ''
+      weight: '-15'
+    linkedin:
+      value: 'https://www.linkedin.com/'
+      description: ''
+      weight: '-14'
+    facebook:
+      value: 'https://www.facebook.com/'
+      description: 'follow us on :'
+      weight: '-13'
+    googleplus:
+      value: ''
+      description: ''
+      weight: '-12'
+    slideshare:
+      value: ''
+      description: ''
+      weight: '-11'
+  appearance:
+    orientation: h
+    show_name: 0
+  link_attributes:
+    target: '<none>'
+    rel: '<none>'
+  iconset:
+    style: 'fontawesome:lg'
+    installed_iconsets:
+      fontawesome:
+        examples: ''
+visibility: {  }

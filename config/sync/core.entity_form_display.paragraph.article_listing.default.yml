@@ -3,13 +3,24 @@ langcode: en
 status: true
 dependencies:
   config:
+    - field.field.paragraph.article_listing.field__article_title
     - field.field.paragraph.article_listing.field_articles
     - paragraphs.paragraphs_type.article_listing
+  module:
+    - text
 id: paragraph.article_listing.default
 targetEntityType: paragraph
 bundle: article_listing
 mode: default
 content:
+  field__article_title:
+    weight: 1
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textfield
+    region: content
   field_articles:
     weight: 0
     settings:
