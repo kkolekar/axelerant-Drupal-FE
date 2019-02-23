@@ -1,0 +1,30 @@
+footer {
+    height: 100px;
+    background: rgba(0,0,0,0.75);
+    padding: 2.5rem 5.25rem;
+    color: $gray;
+    font-size: 0.8rem;
+
+	&:before {
+		content: "@2017 Company. All Right Reserved.";
+    float: left;
+    width: 16.3rem;
+  }
+  
+	ul {
+		margin: 0px auto;
+		padding: 0;
+
+		li {
+			float:right;
+		}
+		
+		&:after {
+      content: "Follow us on:";
+      @include breakpoint ($desktop) {
+        float: right;
+      }
+			
+		}
+	}
+}
