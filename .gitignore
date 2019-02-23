@@ -22,3 +22,7 @@
 
 # Ignore .env files as they are personal
 /.env
+
+web/themes/custom/company/node_modules/*
+web/themes/custom/company/sass/susy/
+web/themes/custom/company/fonts
