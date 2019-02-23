@@ -45,7 +45,7 @@ module.exports = {
   },
   eslint: {
     options: {
-      fix: false
+      fix: true
     }
   },
   babel: {
