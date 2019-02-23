@@ -3,16 +3,26 @@ langcode: en
 status: true
 dependencies:
   config:
+    - field.field.paragraph.article_listing.field__article_title
     - field.field.paragraph.article_listing.field_articles
     - paragraphs.paragraphs_type.article_listing
+  module:
+    - text
 id: paragraph.article_listing.default
 targetEntityType: paragraph
 bundle: article_listing
 mode: default
 content:
+  field__article_title:
+    weight: 1
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
   field_articles:
     weight: 0
-    label: above
+    label: hidden
     settings:
       view_mode: teaser
       link: false

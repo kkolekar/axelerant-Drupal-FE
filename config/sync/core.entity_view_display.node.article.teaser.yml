@@ -38,11 +38,14 @@ content:
       image_link: content
     third_party_settings: {  }
     label: hidden
-  links:
+  field_tags:
+    type: entity_reference_label
     weight: 2
     region: content
-    settings: {  }
+    label: hidden
+    settings:
+      link: true
     third_party_settings: {  }
 hidden:
   comment: true
-  field_tags: true
+  links: true

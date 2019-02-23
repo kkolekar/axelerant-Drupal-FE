@@ -12,14 +12,14 @@ dependencies:
 id: contactblock
 theme: company
 region: content
-weight: 2
+weight: 0
 provider: null
 plugin: contact_block
 settings:
   id: contact_block
-  label: 'Contact block'
+  label: 'Convinced  to work with us?'
   provider: contact_block
-  label_display: '0'
+  label_display: visible
   contact_form: work_with_us
 visibility:
   request_path:

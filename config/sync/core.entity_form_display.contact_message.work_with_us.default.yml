@@ -16,23 +16,23 @@ content:
     weight: 1
     settings:
       size: 60
-      placeholder: ''
+      placeholder: 'Email Address'
     third_party_settings: {  }
     type: email_default
     region: content
   field_full_name:
+    type: string_textfield
     weight: 0
+    region: content
     settings:
       size: 60
-      placeholder: ''
+      placeholder: 'Full Name'
     third_party_settings: {  }
-    type: string_textfield
-    region: content
   field_phone_number:
     weight: 2
     settings:
       size: 60
-      placeholder: ''
+      placeholder: 'Phone Number'
     third_party_settings: {  }
     type: string_textfield
     region: content
@@ -41,7 +41,7 @@ content:
     weight: 3
     settings:
       rows: 12
-      placeholder: ''
+      placeholder: 'Message in brief'
     region: content
     third_party_settings: {  }
 hidden:
