@@ -1,0 +1,57 @@
+<div class="layout-container">
+  <div id="sideNavigation" class="sidenav">
+    <a href="javascript:void(0)" class="closebtn">&times;</a>
+    <a href="#">About</a>
+    <a href="#">Features</a>
+    <a href="#">Contact Us</a>
+  </div>
+    
+  <nav class="topnav">
+    <a href="#">
+      <svg width="30" height="30" id="icoOpen">
+        <path d="M0,5 30,5" stroke="#c8c8c8" stroke-width="5"/>
+        <path d="M0,14 30,14" stroke="#c8c8c8" stroke-width="5"/>
+        <path d="M0,23 30,23" stroke="#c8c8c8" stroke-width="5"/>
+      </svg>
+    </a>
+  </nav>
+
+  <header role="banner">
+    {{ page.header }}
+  </header>
+
+  {{ page.primary_menu }}
+  {{ page.secondary_menu }}
+  {{ page.breadcrumb }}
+  {{ page.highlighted }}
+  {{ page.help }}
+
+  <main role="main">
+    <a id="main-content" tabindex="-1"></a>{# link is in html.html.twig #}
+    <div class="layout-content">
+      {{ page.content }}
+    </div>{# /.layout-content #}
+
+    {% if page.sidebar_first %}
+      <aside class="layout-sidebar-first" role="complementary">
+        {{ page.sidebar_first }}
+      </aside>
+    {% endif %}
+
+    {% if page.sidebar_second %}
+      <aside class="layout-sidebar-second" role="complementary">
+        {{ page.sidebar_second }}
+      </aside>
+    {% endif %}
+  </main>
+
+  {% if page.footer %}
+    <footer role="contentinfo">
+      {{ page.footer }}
+    </footer>
+  {% endif %}
+  
+</div>
+
+
+
