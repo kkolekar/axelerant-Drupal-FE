@@ -1,6 +1,80 @@
 <?php
 
-/**
- * @file
- * Functions to support theming in the company theme.
- */
+function company_preprocess_field__field_banner(&$Variables) {
+	$Variables['attributes']['class'][] = 'banner-img';
+}
+
+function company_preprocess_field__field_description(&$Variables) {
+	$Variables['attributes']['class'][] = 'banner-label';
+}
+
+function company_preprocess_field__paragraph__field_icon_with_text__services_listing (&$Variables){
+	$Variables['attributes']['class'][] = 'service';
+}
+
+function company_preprocess_paragraph__icon_with_text(&$Variables){
+	$Variables['attributes']['class'][] = 'hero-icon';
+}
+function company_preprocess_field__field_icon_with_text_label(&$Variables){
+	$Variables['attributes']['class'][] = 'hero-label';
+}
+function company_preprocess_field__field_features_title(&$Variables) {
+	$Variables['attributes']['class'][] = 'about-title';
+}
+
+function company_preprocess_field__field_features_image(&$Variables) {
+	$Variables['attributes']['class'][] = 'about-image';
+}
+
+function company_preprocess_field__field_features_description(&$Variables) {
+	$Variables['attributes']['class'][] = 'about-description';
+}
+
+function company_preprocess_paragraph__feature_section(&$Variables) {
+	$Variables['attributes']['class'][] = 'about';
+}
+
+function company_preprocess_paragraph__testimonial_listing(&$Variables) {
+	$Variables['attributes']['class'][] = 'test';
+}
+
+function company_preprocess_field__field_testimonials(&$Variables) {
+	$Variables['attributes']['class'][] = 'client-cover';
+}
+
+function company_preprocess_field__field_message(&$Variables) {
+	$Variables['attributes']['class'][] = 'client-message';
+}
+
+function company_preprocess_field__field_client(&$Variables) {
+	$Variables['attributes']['class'][] = 'client-name';
+}
+
+function company_preprocess_field__field_position(&$Variables) {
+	$Variables['attributes']['class'][] = 'client-position';
+}
+
+function company_preprocess_field__field_company(&$Variables) {
+	$Variables['attributes']['class'][] = 'client-company';
+}
+
+function company_preprocess_field__field_articles(&$Variables) {
+	$Variables['attributes']['class'][] = 'service-cover';
+}
+
+function company_preprocess_field__node__field_image__article(&$Variables) {
+	$Variables['attributes']['class'][] = 'service-img';
+}
+
+function company_preprocess_field__node__body__article(&$Variables) {
+	$Variables['attributes']['class'][] = 'service-body';
+}
+function company_preprocess_field__field_tags(&$Variables) {
+	$Variables['attributes']['class'][] = 'service-tag';
+}
+
+function company_form_contact_message_work_with_us_form_alter(&$form, \Drupal\Core\Form\FormStateInterface $form_state, $form_id) {
+	$form['actions']['submit']['#prefix'] = '<div class="contact-form-btn col-xs-12 col-md-10 col-md-offset-2 no-pad-left">';
+	$form['actions']['submit']['#suffix'] = '</div>';
+	$form['actions']['submit']['#value'] = 'Submit';
+}

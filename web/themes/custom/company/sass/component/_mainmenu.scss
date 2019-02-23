@@ -1,0 +1,116 @@
+nav {
+  > ul {
+    margin: -3.7rem 5.25rem;
+    > li {
+      list-style: none;
+      float: right;
+      &:first-child {
+        width: 10.125rem;
+        text-align: center;
+        padding-right: 0rem;
+        padding-top: 4px;
+        a {
+          @include breakpoint ($desktop) {
+            display: block;
+            width: 100%;
+            border-radius:  1rem;
+            border: none;
+            padding: 0.25rem;
+            padding-left: 1rem;
+            background: orangered;
+            color: white;
+            position: relative;
+          }
+         
+          &:before {
+            content: "";
+            background: url(/themes/custom/company/images/icon.png) no-repeat;
+            position: absolute;
+            height: 59px;
+            width: 64px;
+            right: 0px;
+            @include breakpoint ($desktop) {
+              left: 0.5rem;
+            }
+          }
+        }
+      }
+
+      ul {
+        display: none;
+        position: absolute;
+        background-color: $black;
+        min-width: 8.8125rem;
+        padding: 0.5rem;
+        z-index: 5;
+        color: $white;
+        margin: 0.1rem 0px;
+        left: -1rem;
+        top: 3.5rem;
+        font-size: 0.875rem;
+        &::before {
+          content: '';
+          border-bottom: 5px solid #f9651b;
+          height: 2rem;
+          position: absolute;
+          width: 100%;
+          left: 0rem;
+          top: -32px;
+        }
+
+        li {
+          float: none;
+          color: $gray;
+          padding: 0.5rem 0;
+          text-decoration: none;
+          display: block;
+          text-align: left;
+        }
+      }
+    }
+
+    li {
+      position: relative;
+      padding: 10px 2.8rem 0 0;
+      &:hover {
+        ul { 
+          cursor: pointer;
+          display: block;
+         
+        }
+      }
+    }
+  }
+
+  &#block-mainmenu {
+    display: none;
+    @include breakpoint ($desktop) {
+      display: block;
+    }
+  }
+}
+
+#block-company-branding {
+  display: inline-block;
+  margin: 20px 100px;
+  @include breakpoint ($desktop) {
+    display: inline-block;
+    margin: 20px 84px;
+  }
+  &:after {
+    content: "";
+    background: url(/themes/custom/company/images/icon.png) no-repeat;
+    position: absolute;
+    height: 59px;
+    width: 64px;
+    top: 3px;
+    right: -117px;
+    @include breakpoint ($desktop) {
+      visibility: hidden;
+    }
+  }
+}
+
+
+
+  

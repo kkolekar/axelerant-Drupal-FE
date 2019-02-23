@@ -1,0 +1,102 @@
+.paragraph {
+	text-align: center;
+	color: $white;
+
+	.service {
+	position: relative;
+	z-index: 1;
+	padding: 30px;
+		> div {
+			display: block;
+			padding: 0px;
+			height: auto;
+			width: auto;
+			margin: 10px;
+			border: 1px solid #525252;
+			@include breakpoint ($desktop) {
+				display: inline-block;
+				padding: 50px;
+				vertical-align: middle;
+				border-radius: 5px;
+				height: 200px;
+				width: 200px;
+			}
+    }
+    
+    .scroll-down {
+      text-align: center;
+      display: block;
+			padding-top: 1.5rem;
+			@include breakpoint ($desktop) {
+				padding-top: 3.5rem;
+			}
+      a {
+        display: inline-block;
+				position: relative;
+				
+        &::after {
+          content: " ";
+          position: absolute;
+          right: -1rem;
+          top: 0.1rem;
+          border: solid $gray;
+          border-width: 0 3px 3px 0;
+          display: inline-block;
+          padding: 3px;
+          transform: rotate(45deg);
+          -webkit-transform: rotate(45deg);
+        } 
+      }
+    }  
+	}
+
+	.banner-label {
+		position: relative;
+		display: inline-block;
+		font-size: 38px;
+		width: auto;
+		padding-top: 30px;
+		z-index: 4;
+		@include breakpoint ($desktop) {
+			width: 30.6rem;
+			font-size: 36px;
+			padding-top: 8rem;
+		}
+	}
+
+	.banner-img {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		
+		&:after {
+			content: '';
+			position: absolute;
+			width: 100%;
+			height:100%;
+			top:0;
+			left:0;
+			background:rgba(0,0,0,0.8);
+		}
+		img {
+			width: 100%;
+			height: 37.87rem;
+		}
+	}
+
+	.hero-icon {
+		display: -webkit-box;
+		padding: 5px 13px;
+		@include breakpoint ($desktop) {
+			display: block;
+		}
+		.hero-label {
+			padding: 25px;
+			@include breakpoint ($desktop) {
+				padding: 10px;
+				font-size: 1rem;
+			}
+		}
+	}
+}

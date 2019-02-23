@@ -1,0 +1,135 @@
+.test {
+	background: $lightsilver;
+	margin-top: 100px;
+	text-align: center;
+	padding: 30px;
+	position: relative;
+	&:before {
+		content: 'Testimonials';
+		color: $black;
+		font-size: 30px;
+		font-weight: 600;
+	}
+
+	.client-cover {
+		height: auto;
+		display: block;
+		text-align: left;
+		position: relative;
+		@include breakpoint ($desktop) {
+			display: inline-flex;
+			color: $black;
+			padding-top: 80px;
+			padding-bottom: 80px;
+		}
+
+		h2 {
+			display: none;
+		}
+
+		@include breakpoint ($desktop) {
+			&:before {
+				content: " ";
+				background: url(/themes/custom/company/images/leftarrow.png) no-repeat;
+				position: absolute;
+				height: 59px;
+				width: 64px;
+				top: 174px;
+				left: -77px;
+			}
+			> div {
+				&:last-child {
+					&:after {
+						content: " ";
+						background: url(/themes/custom/company/images/rightarrow.png) no-repeat;
+						position: absolute;
+						height: 59px;
+						width: 64px;
+						top: 174px;
+						right: -80px;
+					}
+				}
+			}
+		}
+	}
+
+	.client-message {
+		width: auto;
+		border: 3px solid white;
+		background: #fff;
+		color: gray;
+		border-radius: 26px;
+		padding: 33px;
+		font-size: 1.1rem;
+		font-style: italic;
+		position: relative;
+		margin-top: 30px;
+		@include breakpoint ($desktop) {
+			width: 23.3rem;
+			margin: 0px 13px;
+			padding: 3.6rem;
+		}
+
+		&:before {
+			content: '';
+			background: url(/themes/custom/company/images/colan.png) no-repeat;
+			position: absolute;
+			height: 59px;
+			width: 64px;
+			margin-left: -38px;
+			margin-top: -12px;
+		} 
+
+		&:after {
+			content: '';
+			position: absolute;
+			width: 13px;
+			height: 14px;
+			border-left: 32px solid transparent;
+			border-right: 4px solid transparent;
+			border-top: 27px solid #ffffff;
+			bottom:-29px;
+			left: 40px;
+			@include breakpoint ($desktop) {
+				margin-top: 59px;
+			}
+		}
+	}
+
+	.client-name {
+		font-size: 1.1rem;
+		font-weight: 600;
+		margin: 30px 80px;
+		@include breakpoint ($desktop) {
+			margin: 30px 90px;
+		}
+
+		&:before {
+			content: '';
+			background: url(/themes/custom/company/images/client.png) no-repeat;
+			position: absolute;
+			height: 70px;
+			width: 64px;
+			margin-left: -65px;
+			margin-top: -12px;
+			@include breakpoint ($desktop) {
+				margin-left: -80px;
+			}
+		}    
+	}
+
+	.client-position {
+		margin: -34px 85px;
+		@include breakpoint ($desktop) {
+			margin: -30px 89px;
+		}
+	}
+
+	.client-company {
+		margin: 19px 153px;
+		@include breakpoint ($desktop) {
+			margin: 15px 158px;
+		}
+	}
+}
+
