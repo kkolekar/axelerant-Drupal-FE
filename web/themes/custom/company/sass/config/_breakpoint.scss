@@ -1,0 +1,11 @@
+// Breakpoints & MQ's.
+$screen: "only screen" !default;
+$mobile: 320px !default;
+$tablet: 768px !default;
+$desktop: 1025px !default;
+$mobile-landscape: (max-height 668px) (orientation landscape);
+$tablet-portrait: (min-width 768px) (orientation portrait);
+$upto-tablet: max-width $tablet - 1;
+$upto-desktop: max-width $desktop - 1;
+$only-mobile: 0 $tablet - 1;
+$only-tablet: $tablet $desktop - 1;
