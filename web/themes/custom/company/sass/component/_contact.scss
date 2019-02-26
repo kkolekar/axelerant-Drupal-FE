@@ -29,7 +29,10 @@
     .button {
       width: 7.62rem;
       height: 2.56rem;
-      border: none;
+      border: 1px solid $orange;
+      border-radius: 1.25rem;
+      background: $orange;
+      padding-left: 0.25rem;
     } 
   }
 

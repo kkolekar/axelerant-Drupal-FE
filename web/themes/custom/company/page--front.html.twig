@@ -2,8 +2,9 @@
   <div id="sideNavigation" class="sidenav">
     <a href="javascript:void(0)" class="closebtn">&times;</a>
     <a href="#">About</a>
-    <a href="#">Features</a>
-    <a href="#">Contact Us</a>
+    <a href="#">Service</a>
+    <a href="#">Solutions</a>
+    <a href="#">Blog</a>
   </div>
     
   <nav class="topnav">
@@ -18,13 +19,8 @@
 
   <header role="banner">
     {{ page.header }}
+    {{ page.main-menu }}
   </header>
-
-  {{ page.primary_menu }}
-  {{ page.secondary_menu }}
-  {{ page.breadcrumb }}
-  {{ page.highlighted }}
-  {{ page.help }}
 
   <main role="main">
     <a id="main-content" tabindex="-1"></a>{# link is in html.html.twig #}

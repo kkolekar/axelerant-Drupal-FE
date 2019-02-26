@@ -25,6 +25,7 @@
 
   div {
     display: inline-block;
+    position: relative;
     @include breakpoint ($desktop) {
       vertical-align: middle;
       height: 12rem;

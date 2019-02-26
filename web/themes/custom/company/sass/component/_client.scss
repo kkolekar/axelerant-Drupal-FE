@@ -9,6 +9,7 @@
 		color: $black;
 		font-size: 30px;
 		font-weight: 600;
+		display: block;
 	}
 
 	.client-cover {
@@ -25,31 +26,6 @@
 
 		h2 {
 			display: none;
-		}
-
-		@include breakpoint ($desktop) {
-			&:before {
-				content: " ";
-				background: url(/themes/custom/company/images/leftarrow.png) no-repeat;
-				position: absolute;
-				height: 59px;
-				width: 64px;
-				top: 174px;
-				left: -77px;
-			}
-			> div {
-				&:last-child {
-					&:after {
-						content: " ";
-						background: url(/themes/custom/company/images/rightarrow.png) no-repeat;
-						position: absolute;
-						height: 59px;
-						width: 64px;
-						top: 174px;
-						right: -80px;
-					}
-				}
-			}
 		}
 	}
 

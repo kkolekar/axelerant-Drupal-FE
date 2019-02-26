@@ -93,6 +93,7 @@ nav {
 #block-company-branding {
   display: inline-block;
   margin: 20px 100px;
+  position: relative;
   @include breakpoint ($desktop) {
     display: inline-block;
     margin: 20px 84px;
@@ -103,8 +104,8 @@ nav {
     position: absolute;
     height: 59px;
     width: 64px;
-    top: 3px;
-    right: -117px;
+    top: 4px;
+    right: -100px;
     @include breakpoint ($desktop) {
       visibility: hidden;
     }
